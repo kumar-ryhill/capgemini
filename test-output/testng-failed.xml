@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite - All]">
+  <parameter name="browser" value="chrome"/>
+  <test name="test">
+    <classes>
+      <class name="com.capgi.Driver.Tests"/>
+    </classes>
+  </test> <!-- test -->
+  <test name="test(failed)">
+    <classes>
+      <class name="com.capgi.Driver.Tests">
+        <methods>
+          <include name="execute" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.capgi.Driver.Tests -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Test Suite - All] -->
